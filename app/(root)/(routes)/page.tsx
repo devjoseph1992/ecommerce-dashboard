@@ -1,8 +1,8 @@
 "use client";
 
-import { Modal } from "@/components/ui/model";
 import { useStoreModal } from "@/hooks/use-store-modal";
 import { useEffect } from "react";
+import { Modal } from "@/components/ui/model";
 
 const SetupPage = () => {
   const onOpen = useStoreModal((state) => state.onOpen);
@@ -13,11 +13,7 @@ const SetupPage = () => {
       onOpen();
     }
   }, [isOpen, onOpen]);
-  return (
-    <>
-      <div className="p-4">root page</div>
-    </>
-  );
+  return null;
 };
 
 export default SetupPage;
