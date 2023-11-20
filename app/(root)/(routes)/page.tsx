@@ -2,7 +2,6 @@
 
 import { useStoreModal } from "@/hooks/use-store-modal";
 import { useEffect } from "react";
-import { Modal } from "@/components/ui/model";
 
 const SetupPage = () => {
   const onOpen = useStoreModal((state) => state.onOpen);
